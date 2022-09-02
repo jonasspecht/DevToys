@@ -54,6 +54,7 @@ Many tools are available.
   - UUID 1 and 4
   - Lorem Ipsum
   - Checksum
+  - Password
 - Text
   - Escape / Unescape
   - Inspector & Case Converter
@@ -133,6 +134,7 @@ Here is the list of tool name you can use:
 - `hash` - Hash Generator
 - `uuid` - UUID Generator
 - `loremipsum` - Lorem Ipsum Generator
+- `password` - Password Generator
 - `checksum` - Checksum File
 - `cronparser` - Cron Parser
 - `jsonformat` Json Formatter

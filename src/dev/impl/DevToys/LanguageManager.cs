@@ -44,6 +44,7 @@ namespace DevToys
         private readonly MainPageStrings _mainpage = new MainPageStrings();
         private readonly MarkdownPreviewStrings _markdownpreview = new MarkdownPreviewStrings();
         private readonly NumberBaseConverterStrings _numberbaseconverter = new NumberBaseConverterStrings();
+        private readonly PasswordGeneratorStrings _passwordgenerator = new PasswordGeneratorStrings();
         private readonly PngJpgCompressorStrings _pngjpgcompressor = new PngJpgCompressorStrings();
         private readonly RegExStrings _regex = new RegExStrings();
         private readonly SearchResultStrings _searchresult = new SearchResultStrings();
@@ -112,6 +113,11 @@ namespace DevToys
         /// Gets the <see cref="GuidGeneratorStrings"/>.
         /// </summary>
         public GuidGeneratorStrings GuidGenerator => _guidgenerator;
+
+        /// <summary>
+        /// Gets the <see cref="PasswordGeneratorStrings"/>.
+        /// </summary>
+        public PasswordGeneratorStrings PasswordGenerator => _passwordgenerator;
 
         /// <summary>
         /// Gets the <see cref="GZipEncoderDecoderStrings"/>.
@@ -1035,6 +1041,50 @@ namespace DevToys
         /// Gets the resource SearchKeywords.
         /// </summary>
         public string SearchKeywords => _resources.GetString("SearchKeywords");
+    }
+
+    public class PasswordGeneratorStrings : ObservableObject
+    {
+        private readonly ResourceLoader _resources = ResourceLoader.GetForViewIndependentUse("PasswordGenerator");
+
+        /// <summary>
+        /// Gets the resource AccessibleName.
+        /// </summary>
+        public string AccessibleName => "Password Generator";//_resources.GetString("AccessibleName");
+
+        /// <summary>
+        /// Gets the resource Description.
+        /// </summary>
+        public string Description => "Generate cryptographically secure passwords"; //_resources.GetString("Description");
+
+        /// <summary>
+        /// Gets the resource Configuration.
+        /// </summary>
+        public string Configuration => "Configuration"; //_resources.GetString("Configuration");
+
+        /// <summary>
+        /// Gets the resource MenuDisplayName.
+        /// </summary>
+        public string MenuDisplayName => "MenuDisplayName"; //_resources.GetString("MenuDisplayName");
+
+        /// <summary>
+        /// Gets the resource SearchDisplayName.
+        /// </summary>
+        public string SearchDisplayName => "SearchDisplayName"; //_resources.GetString("SearchDisplayName");
+
+        /// <summary>
+        /// Gets the resource SearchKeywords.
+        /// </summary>
+        public string SearchKeywords => "SearchKeywords"; //_resources.GetString("SearchKeywords");
+
+        public string Length => "Length"; //_resources.GetString("Length");
+        public string IncludeLowerCase => "LowerCase"; //_resources.GetString("IncludeLowerCase");
+        public string IncludeUpperCase => "UpperCase"; //_resources.GetString("IncludeUpperCase");
+        public string GenerateButton => "Generate passwords"; //_resources.GetString("GenerateButton");
+        public string Generate => "Generate"; //_resources.GetString("Generate");
+        public string MultiplySymbol => "x"; //_resources.GetString("MultiplySymbol");
+        public string NumberOfPasswordsToGenerate_AutomationProperties_Name => "Number of passwords to generate"; //_resources.GetString("NumberOfPasswordsToGenerate_AutomationProperties_Name");
+        public string Passwords => "Password(s)"; //_resources.GetString("Passwords");
     }
 
     public class GZipEncoderDecoderStrings : ObservableObject
